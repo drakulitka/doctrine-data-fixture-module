@@ -24,8 +24,8 @@
     "doctrine/doctrine-orm-module": "^2.1"
   },
   "autoload": {
-    "psr-0": {
-      "DoctrineDataFixtureModule": "src/"
+    "psr-4": {
+      "DoctrineDataFixtureModule\\": "src/"
     }
   },
   "extra": {
