@@ -1,13 +1,13 @@
-# DoctrineDataFixture Module for Zend Framework 3
+## DoctrineDataFixture Module for Zend Framework 3
 
-## Introduction
+### Introduction
 
 This is fork from [dkorsak/doctrine-data-fixture-module](https://github.com/dkorsak/doctrine-data-fixture-module).
 
 
 The DoctrineDataFixtureModule module intends to integrate [Doctrine2 ORM Data Fixtures](https://github.com/doctrine/data-fixtures) with Zend Framework 3.
 
-## Installation
+### Installation
 
 Installation of this module uses composer. For composer documentation, please refer to
 [getcomposer.org](http://getcomposer.org/).
@@ -19,7 +19,7 @@ $ php composer.phar require drakulitka/doctrine-data-fixture-module
 Then open `config/application.config.php` and add `DoctrineModule`, `DoctrineORMModule` and 
 `DoctrineDataFixtureModule` to your `modules`
 
-#### Registering Fixtures
+##### Registering Fixtures
 
 To register fixtures with Doctrine module add the fixtures in your configuration.
 
@@ -31,27 +31,27 @@ return [
             'YourModuleName' => __DIR__ . '/../src/Fixture',
         ],
     ],
-);
+];
 ```
 
-## Usage
+### Usage
 
-#### Default
+##### Default
 ```sh
 ./vendor/bin/doctrine-module orm:fixtures:load 
 ```
 
-#### Purge with truncate and without confirmation
+##### Purge with truncate and without confirmation
 ```sh
 ./vendor/bin/doctrine-module orm:fixtures:load -n --purge-with-truncate 
 ```
 
-#### Append data instead of delete
+##### Append data instead of delete
 ```sh
 ./vendor/bin/doctrine-module orm:fixtures:load -n --append
 ```
 
-## How to inject container into fixtures file
+### How to inject container into fixtures file
 
 
 ```php
